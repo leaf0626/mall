@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <router-view/>
-    <div id="tab">
+    <!-- <router-view/> -->
+    <!-- <div id="tab"> -->
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
-    </div>
+    <!-- </div> -->
+    11122
   </div>
 </template>
 
