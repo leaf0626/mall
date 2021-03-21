@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <router-view/>
-    <div id="tab">
-      111
-      <!-- <router-link to="/">Home</router-link> 
-      <router-link to="/about">About</router-link> -->
-    </div>
+    <!-- <router-view/> -->
+    <div class="content"></div>
+    <tabbar></tabbar>
   </div>
 </template>
 
 <script>
-
+import tabbar from "@/views/tabbar/index.vue";
 export default {
-  name:'app'
-}
-
+  name: "app",
+  components: {
+    tabbar,
+  },
+};
 </script>
 
-<style>
-@import "~@/assets/style/base.css";
+<style lang="less" scoped>
+@import "assets/style/base.css";
+.content {
+  height: calc(100vh - 49px);
+  overflow: scroll;
+}
 </style>
+
